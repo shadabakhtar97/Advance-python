@@ -31,7 +31,7 @@ Here are some key components and features of the Django web framework:
 
 Overall, Django is known for its "batteries-included" philosophy, which means it provides a wide range of built-in features and tools, allowing developers to focus on building their applications rather than reinventing the wheel. It's a popular choice for web developers because of its efficiency, robustness, and the wealth of resources available in its ecosystem.
 
-### -------------------------------------------------------------------------------------------------------------
+### --------------------------------------------------------------------------------------------------------------------
 ### Python	The MVC & MVT Design Pattern
 In Python web development, the MVC (Model-View-Controller) and MVT (Model-View-Template) design patterns are commonly used to structure web applications. These patterns help organize code and separate concerns, making it easier to develop and maintain web applications. Let's explore both patterns in Python:
 
@@ -107,3 +107,45 @@ In Python web development, the MVC (Model-View-Controller) and MVT (Model-View-T
    ```
 
 In both MVC and MVT, the main idea is to separate concerns, making your code more maintainable and easier to scale. The choice between these patterns often depends on the specific web framework you are using. Django, for instance, enforces the use of the MVT pattern, while other frameworks like Flask provide more flexibility to choose between MVC or other patterns based on your project's needs.
+
+### --------------------------------------------------------------------------------------------------------------------
+### Django’s History
+Django is a high-level Python web framework that was created to simplify web development and promote best practices. Its history dates back to the early 2000s, and it has since become one of the most popular web frameworks for building robust and scalable web applications. Here's an overview of Django's history:
+
+1. **Development Begins (2003)**:
+   - Django's development started at the Lawrence Journal-World newspaper in Lawrence, Kansas, USA.
+   - The project was initiated by Adrian Holovaty and Simon Willison as a tool to help journalists and developers build web applications quickly and efficiently.
+
+2. **Publicly Released (2005)**:
+   - Django was publicly released in July 2005 as an open-source project under the BSD license.
+   - The release included a set of core components that are still central to Django today, such as the ORM (Object-Relational Mapping) system, the templating engine, and the administrative interface.
+
+3. **Django Software Foundation (2008)**:
+   - In 2008, the Django Software Foundation (DSF) was established to promote, support, and advance the development of Django.
+   - The DSF has played a significant role in managing the project's resources, organizing events, and ensuring its long-term sustainability.
+
+4. **Major Releases**:
+   - Django follows a regular release schedule, with major releases every 9-12 months and frequent minor updates. Some notable major releases include:
+     - Django 1.0 (2008): A significant milestone, marking the framework's stability and maturity.
+     - Django 1.2 (2010): Introduced a built-in support for internationalization and localization.
+     - Django 1.3 (2011): Added support for class-based views.
+     - Django 1.4 (2012): Included support for time zones and static file handling.
+     - Django 1.8 (2015): Brought major improvements to the ORM, including the introduction of built-in support for database migrations.
+     - Django 2.0 (2017): Dropped support for Python 2, making Python 3 the minimum required version.
+     - Django 3.0 (2019): Introduced asynchronous views and support for Python 3.6+.
+
+5. **Community Growth**:
+   - Django has a vibrant and active community of developers, which has contributed to its continuous improvement and popularity.
+   - The Django community organizes conferences, sprints, and documentation efforts to support and expand the framework's ecosystem.
+
+6. **Django REST framework**:
+   - Django REST framework, an extension for building RESTful APIs, has become an essential part of the Django ecosystem. It provides powerful tools for creating web APIs quickly.
+
+7. **Current Status (2021)**:
+   - As of my last knowledge update in September 2021, Django was actively maintained and widely used by developers worldwide.
+   - The latest version at that time was Django 3.2 LTS (Long-Term Support), with Django 4.0 in development.
+
+Please note that developments in the Django framework may have occurred since my last knowledge update in September 2021. You can visit the official Django website (https://www.djangoproject.com/) for the most up-to-date information and to track the latest releases and developments in the Django community.
+
+
+### --------------------------------------------------------------------------------------------------------------------
