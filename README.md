@@ -1,4 +1,4 @@
-# advance-python
+# Advance-python
 Learn About Advance Python in Deep Dive
 
 ### What Is a Django Web Framework?
@@ -149,3 +149,51 @@ Please note that developments in the Django framework may have occurred since my
 
 
 ### --------------------------------------------------------------------------------------------------------------------
+# Installing Django on windows 10
+To install Django on Windows 10, you can follow these steps:
+
+1. **Install Python:** Django is a Python web framework, so you need Python installed on your system. You can download Python for Windows from the official website (https://www.python.org/downloads/windows/) and follow the installation instructions. Make sure to check the box that says "Add Python X.Y to PATH" during installation (X.Y represents the Python version you're installing).
+
+2. **Open Command Prompt:** Once Python is installed, open Command Prompt by searching for "cmd" or "Command Prompt" in the Windows Start menu.
+
+3. **Create a Virtual Environment (Optional but Recommended):** It's a good practice to create a virtual environment to isolate your Django project's dependencies. To create a virtual environment, run the following command in Command Prompt:
+
+   ```bash
+   python -m venv myenv
+   ```
+
+   Replace "myenv" with the name you want to give to your virtual environment.
+
+4. **Activate the Virtual Environment:** To activate the virtual environment, run the appropriate command based on your Command Prompt version:
+
+   For Command Prompt:
+   ```bash
+   myenv\Scripts\activate
+   ```
+
+   For PowerShell:
+   ```bash
+   .\myenv\Scripts\Activate.ps1
+   ```
+
+5. **Install Django:** With the virtual environment activated, you can now install Django using pip:
+
+   ```bash
+   pip install django
+   ```
+
+6. **Verify Django Installation:** To verify that Django has been installed correctly, you can check its version with the following command:
+
+   ```bash
+   python -m django --version
+   ```
+
+   This should display the installed Django version.
+
+Now, Django is installed on your Windows 10 system, and you're ready to start creating Django projects and applications. Make sure to deactivate the virtual environment when you're done working on your Django project by running:
+
+```bash
+deactivate
+```
+
+That's it! You're all set to begin developing with Django on Windows 10.
