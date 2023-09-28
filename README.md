@@ -197,3 +197,121 @@ deactivate
 ```
 
 That's it! You're all set to begin developing with Django on Windows 10.
+
+### --------------------------------------------------------------------------------------------------------------------
+### How to create simple project in Django?
+Creating a simple project in Django involves several steps, including setting up the Django framework, creating a Django project, defining models, creating views, and setting up URLs. Here's a step-by-step guide to creating a basic Django project:
+
+**Step 1: Install Django**
+
+Before you can start a Django project, you need to make sure you have Python and Django installed on your system. You can install Django using pip, the Python package manager:
+
+```bash
+pip install Django
+```
+
+**Step 2: Create a Django Project**
+
+Once Django is installed, you can create a new Django project using the `django-admin` command:
+
+```bash
+django-admin startproject projectname
+```
+
+Replace `projectname` with the name you want to give to your project.
+
+**Step 3: Navigate to the Project Directory**
+
+Change your current directory to the project directory:
+
+```bash
+cd projectname
+```
+
+**Step 4: Create a Django App**
+
+Django projects are composed of one or more apps. You can create an app using the `python manage.py` command:
+
+```bash
+python manage.py startapp appname
+```
+
+Replace `appname` with the name you want to give to your app.
+
+**Step 5: Define Models**
+
+In your app directory, open the `models.py` file and define the data models for your application using Django's Object-Relational Mapping (ORM). For example:
+
+```python
+from django.db import models
+
+class Item(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+```
+
+**Step 6: Create Database Tables**
+
+To create the database tables based on your models, run the following command:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+**Step 7: Create Views**
+
+Create views for your app by defining functions in your app's `views.py` file. These functions handle HTTP requests and return responses. For example:
+
+```python
+from django.shortcuts import render
+from .models import Item
+
+def item_list(request):
+    items = Item.objects.all()
+    return render(request, 'item_list.html', {'items': items})
+```
+
+**Step 8: Create Templates**
+
+Create HTML templates for your views in a folder named `templates` inside your app's directory. For example, create a file named `item_list.html` to render the list of items.
+
+**Step 9: Configure URLs**
+
+Define URL patterns for your app in your app's `urls.py` file. For example:
+
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('items/', views.item_list, name='item_list'),
+]
+```
+
+Then, include your app's URLs in the project's `urls.py`:
+
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('appname.urls')),
+]
+```
+
+**Step 10: Run the Development Server**
+
+To start the Django development server, run:
+
+```bash
+python manage.py runserver
+```
+
+Now, you should be able to access your Django project in a web browser by going to `http://localhost:8000/` or `http://127.0.0.1:8000/`.
+
+Your simple Django project is now set up, and you can start building your web application by creating more views, templates, and adding functionality as needed. Don't forget to refer to the Django documentation for more in-depth information and advanced features: https://docs.djangoproject.com/en/3.2/
