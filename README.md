@@ -625,4 +625,104 @@ Interacting with a database in Django is primarily done through Django Models. D
    You can access the admin interface at `/admin` and use it to add, edit, and delete records.
 
 This is a basic overview of how to interact with a database using Django Models. Django's ORM provides a powerful and flexible way to work with databases while abstracting away many of the low-level database operations, making it easier to build robust web applications with database functionality.
+### -----------------------------------------------------------------------------------------------------
+### Understanding and Hands-on on Numpy 
+
+NumPy (Numerical Python) is a powerful Python library for numerical computing that provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently. It is a fundamental library for data science, scientific computing, and machine learning in Python. In this guide, I'll provide an overview of NumPy and some hands-on examples to get you started.
+
+### Installing NumPy
+
+You can install NumPy using pip if it's not already installed:
+
+```bash
+pip install numpy
+```
+
+### Importing NumPy
+
+After installing NumPy, you can import it into your Python script or Jupyter Notebook using:
+
+```python
+import numpy as np
+```
+
+### Creating NumPy Arrays
+
+NumPy arrays are the core data structure in NumPy. You can create arrays in various ways:
+
+#### 1. Creating arrays from lists or tuples:
+
+```python
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.array((1, 2, 3, 4, 5))
+```
+
+#### 2. Creating arrays with specific values:
+
+```python
+zeros_arr = np.zeros((3, 4))      # Creates a 3x4 array of zeros
+ones_arr = np.ones((2, 3))        # Creates a 2x3 array of ones
+rand_arr = np.random.rand(2, 2)   # Creates a 2x2 array of random values between 0 and 1
+```
+
+#### 3. Creating arrays with a range of values:
+
+```python
+range_arr = np.arange(0, 10, 2)   # Creates an array with values [0, 2, 4, 6, 8]
+linspace_arr = np.linspace(0, 1, 5)  # Creates an array with 5 equally spaced values between 0 and 1
+```
+
+### Basic Array Operations
+
+You can perform various operations on NumPy arrays:
+
+#### 1. Arithmetic operations:
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+addition = a + b
+subtraction = a - b
+multiplication = a * b
+division = a / b
+```
+
+#### 2. Array indexing and slicing:
+
+```python
+arr = np.array([0, 1, 2, 3, 4, 5])
+print(arr[2])           # Access element at index 2 (3rd element)
+print(arr[1:4])         # Slice from index 1 to 3 (exclusive)
+print(arr[:3])          # Slice from the beginning to index 2
+print(arr[3:])          # Slice from index 3 to the end
+```
+
+#### 3. Reshaping arrays:
+
+```python
+arr = np.arange(1, 10)
+reshaped_arr = arr.reshape(3, 3)
+```
+
+#### 4. Array aggregation functions:
+
+```python
+arr = np.array([1, 2, 3, 4, 5])
+sum_of_elements = np.sum(arr)
+mean_value = np.mean(arr)
+max_value = np.max(arr)
+min_value = np.min(arr)
+```
+
+### Broadcasting
+
+NumPy allows you to perform operations on arrays of different shapes through broadcasting. Broadcasting automatically expands smaller arrays to match the shape of larger arrays when it's possible. For example:
+
+```python
+arr = np.array([1, 2, 3])
+result = arr + 5  # Broadcasting: [1, 2, 3] + [5, 5, 5] = [6, 7, 8]
+```
+
+This is just a basic introduction to NumPy. NumPy offers many more advanced features for mathematical operations, linear algebra, and array manipulation. To deepen your understanding and gain hands-on experience, I recommend exploring NumPy's official documentation and working on practical projects involving data manipulation and analysis.
 
