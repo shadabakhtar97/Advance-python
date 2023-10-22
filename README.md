@@ -199,6 +199,94 @@ deactivate
 That's it! You're all set to begin developing with Django on Windows 10.
 
 ### --------------------------------------------------------------------------------------------------------------------
+### Django An Empty, Runnable Project
+Creating an empty, runnable Django project is a simple process. Here are the steps to get you started with a minimal Django project:
+
+**Note:** Before you begin, make sure you have Python installed on your system. If not, you can download and install Python from the [official Python website](https://www.python.org/downloads/).
+
+1. **Create a Virtual Environment (Optional but Recommended):**
+
+   It's a good practice to create a virtual environment to isolate your project's dependencies. To create a virtual environment, open your terminal and run:
+
+   ```bash
+   python -m venv myenv
+   ```
+
+   Replace `myenv` with your preferred name for the virtual environment.
+
+2. **Activate the Virtual Environment:**
+
+   On Windows:
+
+   ```bash
+   myenv\Scripts\activate
+   ```
+
+   On macOS and Linux:
+
+   ```bash
+   source myenv/bin/activate
+   ```
+
+3. **Install Django:**
+
+   Once the virtual environment is activated, you can install Django using pip:
+
+   ```bash
+   pip install Django
+   ```
+
+4. **Create a Django Project:**
+
+   Now, create a new Django project by running the following command:
+
+   ```bash
+   django-admin startproject myproject
+   ```
+
+   Replace `myproject` with your preferred project name.
+
+5. **Navigate to the Project Directory:**
+
+   Move to your project's directory:
+
+   ```bash
+   cd myproject
+   ```
+
+6. **Create a Django App (Optional):**
+
+   You can create a Django app within your project. An app is a modular component of a Django project that can contain models, views, and templates. To create an app, run:
+
+   ```bash
+   python manage.py startapp myapp
+   ```
+
+   Replace `myapp` with your preferred app name.
+
+7. **Run the Development Server:**
+
+   Start the development server to see your empty Django project in action:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+   By default, the development server will run on `http://127.0.0.1:8000/`.
+
+8. **Access the Django Admin Interface (Optional):**
+
+   To access the Django admin interface, you'll need to create a superuser account. Run the following command and follow the prompts to create a superuser:
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+   You can then access the admin interface at `http://127.0.0.1:8000/admin/`.
+
+Your empty Django project is now up and running. You can start building your web application by defining models, views, and templates in your app. Don't forget to configure your project's settings in the `settings.py` file and set up your URLs in the `urls.py` file.
+
+### --------------------------------------------------------------------------------------------------------------------
 ### How to create simple project in Django?
 Creating a simple project in Django involves several steps, including setting up the Django framework, creating a Django project, defining models, creating views, and setting up URLs. Here's a step-by-step guide to creating a basic Django project:
 
